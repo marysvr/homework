@@ -1,0 +1,47 @@
+.label {
+  display: block;
+}
+
+textarea {
+  resize: vertical;
+  max-height: 200px;
+}
+
+form {
+  max-width: 400px;
+  margin: 50px;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 20px;
+}
+
+.title {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+button {
+  padding: 5px;
+}
+
+textarea,
+input {
+  border-radius: 7px;
+}
+
+.text {
+  line-height: 0.1;
+}
+
+fieldset {
+  border-radius: 7px;
+}
+
+button {
+  border-radius: 7px;
+  line-height: 1.1;
+}
+
+.s {
+  margin: 5px;
+}
