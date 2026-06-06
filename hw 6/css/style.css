@@ -1,0 +1,50 @@
+html {
+  font-family: sans-serif;
+  background-color: rgb(37, 37, 37);
+}
+
+body * {
+  box-sizing: border-box;
+  color: aliceblue;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.tel {
+  text-decoration: none;
+}
+
+article {
+  max-height: 70px;
+  align-self: center;
+}
+
+img {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 20%;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  text-decoration: underline;
+  max-height: 70px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 15px;
+  align-self: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-self: start;
+}
