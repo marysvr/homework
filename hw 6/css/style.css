@@ -1,0 +1,50 @@
+html {
+  font-family: sans-serif;
+  background-color: rgb(37, 37, 37);
+}
+
+body * {
+  box-sizing: border-box;
+  color: aliceblue;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fff;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 20%;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.phone {
+  text-decoration: none;
+  padding-top: 10px;
+}
