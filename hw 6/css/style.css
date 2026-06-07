@@ -9,42 +9,42 @@ body * {
 }
 
 ul {
-  padding: 0;
   margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
   gap: 20px;
 }
 
-.tel {
-  text-decoration: none;
+.container {
+  max-width: 1320px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-article {
-  max-height: 70px;
+.header-container {
+  display: flex;
   align-self: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fff;
 }
 
-img {
-  max-width: 50px;
-  max-height: 50px;
+.logo {
+  width: 50px;
+  height: 50px;
   border-radius: 20%;
 }
 
-.container {
-  max-width: 1220px;
-  padding: 0 15px;
-  margin: 0 auto;
+.nav {
   display: flex;
-  text-decoration: underline;
-  max-height: 70px;
-  border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 15px;
-  align-self: center;
+  gap: 25px;
 }
 
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-  align-self: start;
+.phone {
+  text-decoration: none;
+  padding-top: 10px;
 }
