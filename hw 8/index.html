@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalise.css">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <form class="form">
+      <fieldset class="form-group">
+        <legend class="form-group-title">Ваши личные данные</legend>
+          <label for="name" class="label">Ваше имя</label>
+           <input 
+              class="input"
+              type="text"
+              placeholder="имя" 
+              name="name" 
+              required
+            />
+            <label for="age" class="label">Ваш возраст</label>
+            <input
+              class="input"
+              type="number"
+              placeholder="возраст"
+              name="num"
+              value="возраст"
+              required
+            />
+            <label class="label" for="phone">Ваш номер телефона</label>
+            <input
+              class="input"
+              type="tel"
+              placeholder="телефон"
+              name="tel"
+              required
+            />
+          </label>
+          <label class="label" >Ваша почта</label>
+            <input
+              class="input"
+              type="email"
+              placeholder="почта"
+              name="email"
+              required
+            />
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="massage" class="label">Сообщение</label>
+        <textarea 
+          id="message"
+          class="textarea"
+          placeholder="Ваше сообщение"
+          name="message"
+          required>
+        </textarea>
+        <label class="label checkbox-label">
+          <input class="checkbox" type="checkbox" name="checkbox" required />
+          <span class="checkbox-text"> Я принимаю правила </span>
+        </label>
+      </fieldset>
+      <button class="button">Отправить</button>
+    </form>
+  </body>
+</html>
