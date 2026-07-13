@@ -1,0 +1,158 @@
+.article {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+.article__subtitle {
+  font-size: 36px;
+}
+
+.article__text {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
+
+.article__title {
+  max-width: 596px;
+  margin-bottom: 40px;
+  font-family: Oswald, sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
+.article__text--last {
+  margin-bottom: 0;
+}
+
+.article__section--mb-1 {
+  margin-bottom: 80px;
+}
+
+.article__section--mb-2 {
+  margin-bottom: 40px;
+}
+
+.article__media-wrapper {
+  position: relative;
+}
+
+.article__media-wrapper::before {
+  width: 528px;
+  height: 48px;
+}
+
+.article__media-wrapper--1::before {
+  top: 100px;
+  left: 0px;
+}
+
+.article__media-wrapper--2::before {
+  right: 0px;
+  bottom: 136px;
+}
+
+.article__list {
+  margin-top: 0;
+  padding-left: 16px;
+}
+
+.article__list-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.article__list-item::marker {
+  font-size: 22px;
+  color: #3596ed;
+}
+
+.article__play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  background-color: #3596ed;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition:
+    opacity 0.2s,
+    background-color 0.2s;
+  transition:
+    opacity 0.2s,
+    background-color 0.2s;
+}
+
+.article__play-button:hover {
+  background-color: #36a1ff;
+}
+
+.article__play-button:not(:disabled):active {
+  background-color: #2368a5;
+}
+
+.article__play-icon {
+  display: block;
+}
+
+@media (width <= 768px) {
+  .article__media-wrapper::before {
+    display: none;
+  }
+
+  .article__subtitle {
+    font-size: 32px;
+  }
+
+  .article__section--mb-1 {
+    margin-bottom: 60px;
+  }
+}
+
+@media (width <= 576px) {
+  .article {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .article__subtitle {
+    font-size: 28px;
+  }
+
+  .article__section--mb-1 {
+    margin-bottom: 40px;
+  }
+
+  .article__section--mb-2 {
+    margin-bottom: 30px;
+  }
+
+  .article__play-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .article__play-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
