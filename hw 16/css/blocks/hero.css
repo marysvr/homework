@@ -2,9 +2,15 @@
   position: relative;
 }
 
-@media (width >576px) {
+@media (width > 576px) {
   .hero {
     padding-bottom: 94px;
+  }
+}
+
+@media (width <= 576px) {
+  .hero {
+    padding-bottom: 80px;
   }
 }
 
@@ -35,15 +41,15 @@
   flex-grow: 1;
 }
 
-@media (width <= 768px) {
-  .hero__header {
-    flex-direction: column;
-  }
-}
-
 @media (width > 768px) {
   .hero__header {
     align-items: center;
+  }
+}
+
+@media (width <= 768px) {
+  .hero__header {
+    flex-direction: column;
   }
 }
 
