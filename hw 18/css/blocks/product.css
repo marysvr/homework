@@ -72,7 +72,7 @@
 }
 
 .product__slider-button--next {
-  transform: rotate(180deg) translateY(-50%);
+  transform: rotate(180deg) translateY(50%);
 }
 
 .product__slider-button-icon {
