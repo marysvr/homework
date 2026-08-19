@@ -1,0 +1,104 @@
+.expert {
+  position: relative;
+  background-color: var(--bg-color);
+}
+
+.expert__info {
+  background-image: url("../../img/woman-2.png");
+  background-color: var(--bg-color);
+  background-size: 700px;
+  background-position: right center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-block: 130px;
+  margin-inline: 250px;
+}
+
+.expert__title {
+  font-family: var(--second-family);
+  font-weight: 900;
+  font-size: 42px;
+  color: var(--main-color);
+  padding-bottom: 40px;
+}
+
+.expert__text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--main-color);
+  width: 670px;
+  padding-bottom: 10px;
+}
+
+.p {
+  padding-bottom: 10px;
+}
+
+@media (width > 1850px) {
+  .expert__add {
+    visibility: hidden;
+  }
+}
+
+@media (width <= 1850px) {
+  .expert__info {
+    background-image: none;
+  }
+
+  .expert__add {
+    margin-inline: 250px;
+    padding-top: 60px;
+  }
+
+  .expert__text-add {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 140%;
+    color: #000;
+    padding-bottom: 40px;
+  }
+
+  .add-h2,
+  .expert__title {
+    font-family: var(--second-family);
+    font-weight: 900;
+    font-size: 26px;
+    color: #111;
+    padding-bottom: 20px;
+  }
+
+  .add-h3 {
+    font-family: var(--second-family);
+    font-weight: 900;
+    font-size: 22px;
+    color: #111;
+    padding-bottom: 16px;
+  }
+
+  .add-h4 {
+    font-family: var(--second-family);
+    font-weight: 900;
+    font-size: 20px;
+    color: #111;
+    padding-bottom: 14px;
+  }
+
+  .add-h5 {
+    font-family: var(--second-family);
+    font-weight: 900;
+    font-size: 16px;
+    color: #111;
+    padding-bottom: 12px;
+  }
+
+  .add-6 {
+    font-family: var(--second-family);
+    font-weight: 900;
+    font-size: 14px;
+    color: #111;
+    padding-bottom: 10px;
+  }
+}
