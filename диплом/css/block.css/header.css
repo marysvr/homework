@@ -1,0 +1,333 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: var(--layer-3);
+  -webkit-transition: -webkit-box-shadow var(--transition-time);
+  transition: -webkit-box-shadow var(--transition-time);
+  -o-transition: box-shadow var(--transition-time);
+  transition: box-shadow var(--transition-time);
+  transition:
+    box-shadow var(--transition-time),
+    -webkit-box-shadow var(--transition-time);
+  background-color: var(--main-color);
+}
+
+.header--fixed {
+  -webkit-box-shadow: 0 0 20px var(--shadow-color);
+  box-shadow: 0 0 20px var(--shadow-color);
+  overflow-y: hidden;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-inline: 70px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 90px;
+  gap: 30px;
+}
+
+.header__logo {
+  flex-shrink: 0;
+}
+
+.header__logo .logo__img {
+  display: block;
+}
+
+.header__menu {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header__menu .menu__list {
+  display: inline-flex;
+  gap: 30px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__menu .menu__link {
+  white-space: nowrap;
+  font-size: 16px;
+  line-height: 130%;
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .header__menu .menu__link:hover {
+    color: var(--accent-color);
+  }
+}
+
+.header__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+@media (width > 992px) {
+  .header__controls {
+    gap: 60px;
+  }
+}
+
+@media (width <= 992px) {
+  .header__controls {
+    gap: 30px;
+  }
+}
+
+.header__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (width > 768px) {
+  .header__actions {
+    gap: 30px;
+  }
+}
+
+@media (width <= 768px) {
+  .header__actions {
+    gap: 30px;
+  }
+}
+
+.header__actions-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding-left: 10px;
+  color: var(--main-color);
+  -webkit-transition: color var(--transition-time);
+  -o-transition: color var(--transition-time);
+  transition: color var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .header__actions-button:hover {
+    color: var(--accent-color);
+  }
+}
+
+.header__actions-button:active {
+  color: var(--accent-color);
+}
+
+.header__actions-icon {
+  stroke: currentColor;
+  padding-left: 10px;
+}
+
+.burger {
+  display: flex;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  order: -1;
+}
+
+.burger svg {
+  display: block;
+}
+
+.burger .burger__icon-close {
+  display: none;
+}
+
+.burger--active .burger__icon-menu {
+  display: none;
+}
+
+.burger--active .burger__icon-close {
+  display: block;
+}
+
+@media (min-width: 1270px) {
+  .header__menu {
+    display: flex;
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    overflow: visible;
+    min-width: auto;
+  }
+
+  .header__menu .menu__list {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header__menu .menu__link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .header__container {
+    margin-inline: 20px;
+    height: 70px;
+    gap: 15px;
+  }
+
+  .header__logo .logo__img {
+    width: 120px;
+    height: auto;
+  }
+
+  .header__menu {
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    bottom: 0;
+    z-index: var(--layer-2);
+    min-width: 297px;
+    padding: 144px 15px 20px 30px;
+    background-color: var(--main-color);
+    -webkit-box-shadow: 2px 0 20px var(--shadow-color);
+    box-shadow: 2px 0 20px var(--shadow-color);
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition:
+      left var(--transition-time),
+      opacity var(--transition-time),
+      visibility var(--transition-time);
+    -o-transition:
+      left var(--transition-time),
+      opacity var(--transition-time),
+      visibility var(--transition-time);
+    transition:
+      left var(--transition-time),
+      opacity var(--transition-time),
+      visibility var(--transition-time);
+    flex: unset;
+    justify-content: flex-start;
+  }
+
+  .header__menu--open {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .header__menu .menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .header__menu .menu__link {
+    font-size: 18px;
+    white-space: normal;
+  }
+
+  .header__actions-button {
+    width: 40px;
+    height: 40px;
+    padding-left: 0;
+  }
+
+  .header__actions-button svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__container {
+    margin-inline: 15px;
+    height: 60px;
+  }
+
+  .header__logo .logo__img {
+    width: 100px;
+    height: auto;
+  }
+
+  .header__menu {
+    min-width: 250px;
+    padding: 120px 15px 20px 25px;
+  }
+
+  .header__menu .menu__link {
+    font-size: 16px;
+  }
+
+  .burger svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header__container {
+    margin-inline: 10px;
+    gap: 10px;
+  }
+
+  .header__logo .logo__img {
+    width: 80px;
+    height: auto;
+  }
+
+  .header__menu {
+    min-width: 220px;
+    padding: 100px 15px 20px 20px;
+  }
+
+  .header__menu .menu__link {
+    font-size: 14px;
+  }
+
+  .burger svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .header__actions-button {
+    width: 36px;
+    height: 36px;
+  }
+
+  .header__actions-button svg {
+    width: 36px;
+    height: 36px;
+  }
+}
