@@ -29,6 +29,7 @@
   border-radius: 40px;
   padding: 40px 35px 45px;
   transition: 0.3s;
+  margin: 0 auto;
 }
 
 .svg__priority {
