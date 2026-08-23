@@ -12,7 +12,7 @@
 .advantage {
   display: flex;
   justify-content: center;
-  margin-block: 150px;
+  margin: 150px 100px;
 }
 
 .container__advantage {
