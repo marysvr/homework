@@ -27,10 +27,15 @@ for (let a = 1; a <= number; a++) {
 
 // Решение с помощью вложенных циклов
 
-for (let i = 0; i < 8; i++) {
+const board = 8;
+let line = "";
+
+for (let i = 1; i <= board; i++) {
   let row = "";
-  for (let j = 0; j < 8; j++) {
-    row += (i + j) % 2 === 0 ? "#" : " ";
+  for (let j = 1; j <= board; j++) {
+    row += (i + j) % 2 === 0 ? "# " : " ";
   }
-  console.log(row);
+  line += row + "\n";
 }
+
+console.log(line);
