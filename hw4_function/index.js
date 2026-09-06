@@ -37,7 +37,7 @@ function getTimeOfDay(hours) {
 function findFirstEven(start, end) {
   for (let k = start; k <= end; k++) {
     if (k % 2 === 0) {
-      return i;
+      return k;
     }
   }
   return "Чётных чисел нет";
